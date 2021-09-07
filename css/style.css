@@ -1,0 +1,170 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding:0;
+    background-color: #292C35;
+    overflow: hidden;
+}
+.content{
+    width: 400px;
+    height: 400px;
+    border:3px solid transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-45deg);
+    border-radius: 0 400px 0 0;
+}
+.wi-fi-tringle{
+    width: 50px;
+    height: 50px;
+    background-color: #C7C7C7;
+    position: absolute;
+    bottom: 0;
+    border-radius: 0 400px 0 0;
+}
+.wi-fi-line1{
+    border-radius: 50%;
+    border: 60px solid #5E5E65;
+    position: absolute;
+    width: 663px;
+    transform: rotate(45deg);
+    height: 467px;
+    top: 50px;
+    left: -213px;
+    z-index: 2;
+    animation-name: line1;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite ;
+}
+.wi-fi-line1::before{
+    content: '';
+    position: absolute;
+    left: 357px;
+    display: block;
+    width: 400px;
+    height: 400px;
+    transform: rotate(45deg);
+    background-color: #292C35;
+    top: 133px;
+    z-index: 5;
+}
+.wi-fi-tringle::before{
+    content: '';
+    position: absolute;
+    left: -504px;
+    display: block;
+    width: 576px;
+    height: 619px;
+    transform: rotate(45deg);
+    background-color: #292C35;
+    top: -25px;
+    z-index: 3;
+}
+.wi-fi-line1::after{
+    content: '';
+    position: absolute;
+    left: -262px;
+    display: block;
+    width: 528px;
+    height: 400px;
+    transform: rotate(45deg);
+    background-color: #292C35;
+    top: 156px;
+    z-index: 5;
+}
+.wi-fi-line2{
+    border-radius: 75%;
+    border: 60px solid #5E5E65;
+    position: absolute;
+    width: 663px;
+    transform: rotate(45deg);
+    height: 604px;
+    top: 113px;
+    left: -348px;
+    z-index: 1;
+    animation-name: line2;
+    animation-duration: 1s;
+    animation-iteration-count: infinite ;
+    -o-animation-delay:800ms;
+    -moz-animation-delay:800ms;
+    -webkit-animation-delay:800ms;
+    animation-delay:800ms;
+}
+.wi-fi-line3 {
+    border-radius: 75%;
+    border: 60px solid #5E5E65;
+    position: absolute;
+    width: 561px;
+    transform: rotate(45deg);
+    height: 705px;
+    top: 171px;
+    left: -415px;
+    z-index: 1;
+    animation-iteration-count: infinite ;
+    animation-name: line3;
+    animation-duration: 1s;
+    -o-animation-delay:400ms;
+    -moz-animation-delay:400ms;
+    -webkit-animation-delay:400ms;
+    animation-delay:400ms;
+}
+@keyframes line1{
+    0%{
+        border-color: rgb(105,104,111);
+    }
+    25%{
+        border-color: rgb(68,70,76);
+    }
+    50%{
+        border-color: rgb(55,57,63)
+    }
+    75%{
+        border-color: rgb(44,45,54)
+    }
+    100%{
+        border-color: rgb(105,104,111);
+    }
+  }
+@keyframes line2{
+    0%{
+        border-color: rgb(105,104,111);
+    }
+    25%{
+        border-color: rgb(68,70,76);
+    }
+    50%{
+        border-color: rgb(55,57,63)
+    }
+    75%{
+        border-color: rgb(44,45,54)
+    }
+    100%{
+        border-color: rgb(105,104,111);
+    }
+}
+@keyframes line3{
+    0%{
+        animation-delay: 1s;
+        border-color: rgb(105,104,111);
+    }
+    25%{
+        border-color: rgb(68,70,76);
+    }
+    50%{
+        border-color: rgb(55,57,63)
+    }
+    75%{
+        border-color: rgb(44,45,54)
+    }
+    100%{
+        border-color: rgb(105,104,111);
+    }
+}
